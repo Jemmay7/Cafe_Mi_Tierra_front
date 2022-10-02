@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-    <title>Contacto</title>
+    <title>Café de mi tierra- Contacto</title>
     <link rel="icon" type="image/x-icon" href="img/icono.ico">
 </head>
 
@@ -54,15 +54,17 @@
             </nav>
         </nav>
     </header>
-
-    <div class="cuerpo1">
+<br>
+<br>
+    <div class="cuerpo2">
         <main class="main-content">
             <section>
-                <form>
+                <form >
+                    <div class = "mb-3">
                     <fieldset>
                         <legend>Contactanos:</legend>
 
-                        <label for="HojaVida">Escriba su Nombre Completo</label><br>
+                        <label class = "form-label" for="HojaVida">Escriba su Nombre Completo</label><br>
                         <input type="text" id="HojaVida" name="Nombres" placeholder="Nombres" required>
                         <input type="text" id="HojaVida" name="Apellidos" placeholder="Apellidos" required><br><br>
 
@@ -75,7 +77,7 @@
                         <input type="radio" id="CC" name="id">
                         <label for="CE">CE</label>
                         <input type="radio" id="CE" name="id">
-                        <label for="PAS">PAS</label>
+                        <label for="PAS">NIT</label>
                         <input type="radio" id="PAS" name="id">
 
 
@@ -84,12 +86,12 @@
 
 
 
-                        <label for=" genero">Sexo:</label>
-                        <input id="genero" list="sexo">
-                        <datalist id="sexo">
-                            <option value="Masculino">
-                            <option value="Femenino">
-                        </datalist><br><br>
+                        <label for="genero">Sexo:</label>
+                        <select id="sexo">
+                            <option value="">Seleccione</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select><br><br>
 
                         <label for="Nacionalidad">Nacionalidad:</label>
                         <select id="Nacionalidad" name="Pais">
@@ -333,20 +335,19 @@
                         <input type="date" id="cumpleaños" name="cumpleaños"><br><br>
                     </fieldset>
 
-                    <textarea name="mensaje" placeholder="Observaciones"></textarea><br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset">
+                    <textarea style="width: 180px"  name="mensaje" placeholder="Observaciones"></textarea><br>
+                    <input class ="btn btn-success" type="submit" value="Enviar">
+                    <input class ="btn btn-success" type="reset" value="Restablecer">
                     <br><br>
+                    </div>
                 </form>
 
             </section>
         </main>
     </div>
 
-    <br>
-    <br>
     <footer class="footer">
-        <p> @copyright Café de mi Tierra </p>
+        <p> ©copyright Café de mi Tierra. All Rights Reserved </p>
     </footer>
 
 
